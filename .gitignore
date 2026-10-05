@@ -37,12 +37,14 @@ ENV/
 *.key
 *.pem
 
-# Data directories (keep directory structure, exclude large files)
+# Data directories (keep directory structure, allow sample dataset)
 data/raw/*
 !data/raw/.gitkeep
+!data/raw/enterprise_support_tickets.csv
 data/processed/*
 !data/processed/.gitkeep
 *.csv
+!enterprise_support_tickets.csv
 *.parquet
 *.jsonl
 *.zip
